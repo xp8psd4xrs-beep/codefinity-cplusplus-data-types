@@ -1,0 +1,14 @@
+#include <iostream>
+#include <iomanip>
+
+double convertToEuro(double dollars)
+    
+    return 0;
+}
+
+int main()
+{
+    double result = convertToEuro(50.0);
+    std::cout << result;
+    return 0;
+}
