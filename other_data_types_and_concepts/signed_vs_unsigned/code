@@ -1,0 +1,18 @@
+#include <iostream>
+
+unsigned int addStock(unsigned int stock, unsigned int newStock, unsigned int maxCapacity) {
+    if (stock + newStock > maxCapacity) {
+        return maxCapacity;
+    }
+    return stock + newStock;
+}
+
+int main() {
+    unsigned int warehouse = 950;
+    unsigned int maxCapacity = 1000;
+
+    std::cout << addStock(warehouse, 30, maxCapacity) << std::endl;  // 980
+    std::cout << addStock(warehouse, 100, maxCapacity) << std::endl; // 1000
+    std::cout << addStock(warehouse, 0, maxCapacity) << std::endl;   // 950
+    return 0;
+}
